@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>OptionsXML | Ok-Framework</title>
+	<title>Options | Ok-Framework</title>
 	<meta name="description" content="Documentation for Ok-Framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,13 +55,13 @@
 					<a href="../modules.html">Ok-Framework</a>
 				</li>
 				<li>
-					<a href="../modules/okrequest.html">OkRequest</a>
+					<a href="../modules/oksize.html">OkSize</a>
 				</li>
 				<li>
-					<a href="okrequest.optionsxml.html">OptionsXML</a>
+					<a href="oksize.options.html">Options</a>
 				</li>
 			</ul>
-			<h1>Interface OptionsXML</h1>
+			<h1>Interface Options</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">OptionsXML</span>
+						<span class="target">Options</span>
 					</li>
 				</ul>
 			</section>
@@ -83,8 +83,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="okrequest.optionsxml.html#async" class="tsd-kind-icon">async</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="okrequest.optionsxml.html#method" class="tsd-kind-icon">method</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="oksize.options.html#depth" class="tsd-kind-icon">depth</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="oksize.options.html#height" class="tsd-kind-icon">height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="oksize.options.html#width" class="tsd-kind-icon">width</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,32 +94,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="async" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> async</h3>
-					<div class="tsd-signature tsd-kind-icon">async<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="depth" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> depth</h3>
+					<div class="tsd-signature tsd-kind-icon">depth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/laukerkillian/Ok-Framework/blob/5c92473/framework/OkRequest.ts#L53">framework/OkRequest.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/laukerkillian/Ok-Framework/blob/e29a333/framework/OkSize.ts#L13">OkSize.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>async run as async or sync</p>
+							<p>depth, which will be contains in OkSize</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="method" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> method</h3>
-					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <a href="../enums/okrequest.httpmethod.html" class="tsd-signature-type" data-tsd-kind="Enumeration">HttpMethod</a></div>
+					<a name="height" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> height</h3>
+					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/laukerkillian/Ok-Framework/blob/5c92473/framework/OkRequest.ts#L49">framework/OkRequest.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/laukerkillian/Ok-Framework/blob/e29a333/framework/OkSize.ts#L9">OkSize.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>method : get, post, ...</p>
+							<p>height, which will be contains in OkSize</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="width" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> width</h3>
+					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/laukerkillian/Ok-Framework/blob/e29a333/framework/OkSize.ts#L5">OkSize.ts:5</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>width, which will be contains in OkSize</p>
 						</div>
 					</div>
 				</section>
@@ -131,63 +147,72 @@
 						<a href="../modules.html">Exports</a>
 					</li>
 					<li class=" tsd-kind-module">
+						<a href="../modules/components_ok_components.html">Components/ok-<wbr>components</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/components_ok_dialog.html">Components/ok-<wbr>dialog</a>
+					</li>
+					<li class=" tsd-kind-module">
 						<a href="../modules/components_ok_tr.html">Components/ok-<wbr>tr</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/components_second_timer.html">Components/second-<wbr>timer</a>
+						<a href="../modules/components_ok_widget.html">Components/ok-<wbr>widget</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/ok.html">Ok</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/ok_tr_attribute.html">Ok-<wbr>tr-<wbr>attribute</a>
-					</li>
-					<li class=" tsd-kind-module">
 						<a href="../modules/okeventsemitter.html">Ok<wbr>Events<wbr>Emitter</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/okimage.html">Ok<wbr>Image</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/oklanguage.html">Ok<wbr>Language</a>
+					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/okrequest.html">Ok<wbr>Request</a>
+						<a href="../modules/oksize.html">Ok<wbr>Size</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/oktranslator.html">Ok<wbr>Translator</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/okunit.html">Ok<wbr>Unit</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/okurl.html">Ok<wbr>Url</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/okwait.html">Ok<wbr>Wait</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/css.html">css</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/okrequest.events.html" class="tsd-kind-icon">Events</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="../enums/okrequest.httpmethod.html" class="tsd-kind-icon">Http<wbr>Method</a>
-					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/okrequest.okrequestclass.html" class="tsd-kind-icon">Ok<wbr>Request<wbr>Class</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="okrequest.options.html" class="tsd-kind-icon">Options</a>
+						<a href="../classes/oksize.oksize-1.html" class="tsd-kind-icon">Ok<wbr>Size</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="okrequest.optionsxml.html" class="tsd-kind-icon">OptionsXML</a>
+						<a href="oksize.options.html" class="tsd-kind-icon">Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="okrequest.optionsxml.html#async" class="tsd-kind-icon">async</a>
+								<a href="oksize.options.html#depth" class="tsd-kind-icon">depth</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="okrequest.optionsxml.html#method" class="tsd-kind-icon">method</a>
+								<a href="oksize.options.html#height" class="tsd-kind-icon">height</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="oksize.options.html#width" class="tsd-kind-icon">width</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="okrequest.response.html" class="tsd-kind-icon">Response</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/okrequest.html#okrequest-1" class="tsd-kind-icon">Ok<wbr>Request</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
@@ -198,11 +223,12 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
